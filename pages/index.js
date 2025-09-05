@@ -50,8 +50,8 @@ export default function Home() {
 
       {/* Section 1: What makes us different */}
       <section id="about" className="text-center py-12 px-6">
-        <h1 className="text-xl font-semibold text-gray-600">
-          What makes us different
+      <h1 className="text-2xl md:text-3xl font-bold text-orange-600 mt-2">
+      What makes us different
         </h1>
         <h1 className="text-2xl md:text-3xl font-bold text-orange-600 mt-2">
           makes them stronger
@@ -74,7 +74,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
           <div className="text-center">
             <p className="font-semibold">Premium Ingredients</p>
             <p className="text-gray-600 text-sm">Elevating pet care with unmatched safety and quality.</p>
@@ -84,7 +83,7 @@ export default function Home() {
             <p className="font-semibold">Vet Developed</p>
             <p className="text-gray-600 text-sm">We raise the bar for dog nutrition, suprpasing industry expectations.</p>
           </div>
-        </div>
+       
       </section>
 
       {/* Section 2: Nutrition Foundation */}
