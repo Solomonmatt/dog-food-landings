@@ -74,7 +74,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
+        <p className="text-gray-600 text-sm">Wholesome recipes for dogs with real meat and veggies.</p>
+          
           <div className="text-center">
             <p className="font-semibold">Premium Ingredients</p>
             <p className="text-gray-600 text-sm">Elevating pet care with unmatched safety and quality.</p>
