@@ -74,11 +74,17 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
           <div className="text-center">
             <p className="font-semibold">Premium Ingredients</p>
             <p className="text-gray-600 text-sm">Elevating pet care with unmatched safety and quality.</p>
           </div>
-         
+          <Image
+            src=""
+            alt=""
+            width={200}
+            height={200}
+            className="rounded-full shadow-lg" />
           <div className="text-center">
             <p className="font-semibold">Vet Developed</p>
             <p className="text-gray-600 text-sm">We raise the bar for dog nutrition, suprpasing industry expectations.</p>
