@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import { useState } from 'react';
+import { useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -71,7 +71,7 @@ export default function Home() {
 
         {/* Bowl Image */}
         <div className="flex justify-center mt-12">
-          <Image src="/dog-food-bowl.png" alt="Dog Food Bowl" width={300} height={300} className="rounded-full shadow-lg" />
+          <Image src="/dog-food.png" alt="Dog Food Bowl" width={300} height={300} className="rounded-full shadow-lg" />
         </div>
 
         {/* CTA Button */}
@@ -85,6 +85,56 @@ export default function Home() {
           <Image src="/mastercard.png" alt="Mastercard" width={40} height={25} />
           <Image src="/amex.png" alt="Amex" width={40} height={25} />
           <Image src="/paypal.png" alt="PayPal" width={40} height={25} />
+        </div>
+      </section>
+
+      {/* Nutrition Section */}
+      <section id="nutrition" className="bg-gray-50 py-16 px-6 md:px-20 grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 className="text-2xl font-bold text-gray-800">
+            Nutrition is the foundation for longer, healthier lives in dogs.
+          </h2>
+          <ul className="mt-6 space-y-2 text-gray-700">
+            <li>✔️ 84% increased vitality</li>
+            <li>✔️ 82% healthier coats</li>
+            <li>✔️ 80% improved digestion</li>
+            <li>✔️ 86% stronger immunity</li>
+          </ul>
+        </div>
+        <div className="flex justify-center">
+          <Image src="/dog.png" alt="Dog" width={350} height={350} className="rounded-lg" />
+        </div>
+      </section>
+
+      {/* Gut Health Section */}
+      <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 gap-10 items-center">
+        <div className="flex justify-center">
+          <Image src="/dogs-eating.png" alt="Dogs Eating" width={400} height={300} className="rounded-lg" />
+        </div>
+        <div>
+          <h2 className="text-2xl font-bold text-gray-800">
+            Improve overall gastrointestinal health for better nutrient absorption
+          </h2>
+          <p className="text-gray-600 mt-4">
+            Our special blend improves nutrient uptake, ensuring your dog gets
+            the maximum benefits from every bite.
+          </p>
+        </div>
+      </section>
+
+      {/* Probiotics Section */}
+      <section id="probiotics" className="bg-gray-50 py-16 px-6 md:px-20 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 className="text-2xl font-bold text-gray-800">
+            Probiotics nourish the beneficial gut bacteria, supporting digestive health
+          </h2>
+          <p className="text-gray-600 mt-4">
+            A healthy gut microbiome keeps digestion smooth and helps build
+            strong immunity.
+          </p>
+        </div>
+        <div className="flex justify-center">
+          <Image src="/dog-food-closeup.png" alt="Dog Food Closeup" width={350} height={350} className="rounded-lg" />
         </div>
       </section>
 
@@ -103,19 +153,4 @@ export default function Home() {
               <li><a href="#about" className="hover:text-white">About</a></li>
               <li><a href="#nutrition" className="hover:text-white">Nutrition</a></li>
               <li><a href="#probiotics" className="hover:text-white">Probiotics</a></li>
-              <li><a href="#contact" className="hover:text-white">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-bold text-white">Contact Us</h3>
-            <p className="mt-2 text-sm">Email: support@dogfood.com</p>
-            <p className="text-sm">Phone: +234 800 123 4567</p>
-          </div>
-        </div>
-        <div className="text-center mt-8 text-sm text-gray-500">
-          © {new Date().getFullYear()} DogFood. All rights reserved.
-        </div>
-      </footer>
-    </main>
-  );
-}
+              <li><a href="#contact" className="hover:text-white">Contact</a></li
